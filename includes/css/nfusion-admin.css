@@ -1,0 +1,102 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --wp-blue: #2271b1;
+}
+
+/* Override _reboot css overrides */
+*, ::after, ::before {
+    box-sizing: initial;
+}
+
+a {
+    color: var(--wp-blue);
+}
+
+/* Menu Item */
+#toplevel_page_nfusion_ppc_settings a.current.menu-top.toplevel_page_nfusion_ppc_settings {
+    background: #000;
+}
+
+.toplevel_page_nfusion_ppc_settings > div.wp-menu-image:before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background: url("/wp-content/plugins/precious-metals-automated-product-pricing-pro/includes/img/nfusion-icon.svg") no-repeat center center;
+    background-size: contain;
+    speak: none !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Settings Page Start */
+.nfusion-settings.wrap {
+    width: 682px;
+    margin: 15px auto;
+    padding-right: 10px; /* match wpcontent padding*/
+}
+@media (max-width: 782px) {
+    .nfusion-settings.wrap {
+        width: 100%;
+    }
+}
+
+.nfusion-settings,
+.nfusion-settings .ui-widget,
+.nfusion-settings .ui-widget input, .nfusion-settings .ui-widget select,
+.nfusion-settings .ui-widget textarea, .nfusion-settings .ui-widget button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nfusion-tabs.ui-widget.ui-widget-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-color: #d6d6d6;
+}
+
+#nfusion-tabs .ui-widget-header {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    border-radius: 0;
+    background: none;
+}
+
+/* Jquery UI Active Tab */
+.ui-state-active, .ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active, a.ui-button:active,
+.ui-button:active, .ui-button.ui-state-active:hover {
+    background-color: var(--wp-blue);
+    border-color: var(--wp-blue);
+}
+
+/* Checkbox/switch */
+.nfusion-settings .form-check-input:checked {
+    background-color: var(--wp-blue);
+    border-color: var(--wp-blue);
+}
+
+
+.nfusion-settings .form-switch .form-check-input {
+    width: 3em;
+    height: 1.5em;
+}
+
+.nfusion-settings input[type=checkbox] {
+    background-repeat: no-repeat;
+}
+
+.nfusion-settings input[type=checkbox]:checked::before {
+    content: none;
+}
+
+/* Custom BS tooltip */
+.custom-tooltip {
+    --bs-tooltip-bg: var(--wp-blue);
+}
